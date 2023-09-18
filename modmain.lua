@@ -1,1 +1,9 @@
-env._G=GLOBAL;AddPrefabPostInitAny(function(a)if a.ShardClient and not a.components.ace then a:AddComponent("ace")end end)modimport"scripts/ace_main"
+env._G = GLOBAL
+AddPrefabPostInitAny(
+    function(someImput)
+        if someImput.ShardClient and not someImput.components.ace then
+            someImput:AddComponent("ace")
+        end
+    end
+)
+modimport "scripts/ace_main"
